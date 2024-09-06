@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .section1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:repeat(3,300px);
+            border: 2px solid black;
+            /* text-align: center; */
+           
+        }
+
+    .box4 img{
+        object-fit: cover;
+        box-sizing: border-box;
+        width: 12rem;
+        padding-left: 100px;
+        text-align: center;
+    }
+    .box5{
+        background-image: url("./images/image-01\ \(2\).jpg");
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        height: inherit;
+    }
+
+    .box6{
+        text-align: center;
+     align-content: center;
+     margin-top: 50px;
+ 
+    }
+    .box3{
+        text-align: center;
+    }
+    .box2{
+        text-align: center;
+    }
+    .box1{
+        text-align: center;
+
+}
+.section2{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 0px;
+    height: 50vh;
+    width: 100vw;
+    background-color: white;
+    margin-top: 10px;
+    border: 2px solid black;
+
+
+}
+.img2{
+    background-image: url("./images/image-02\ \(1\).jpg");
+    box-sizing: border-box;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+    .section3{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns:1.5fr 1fr 1fr;
+        grid-template-rows: 500px;
+        gap:20px;
+    }
+    .imgfoodball{
+        width:100%;
+        height:100%;
+    }
+    .imgfoodball img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+   
+    .inner1{
+        border: 2px solid aqua;
+        width: 100%;
+        height:100%;
+    }
+    .inner1 h3{
+        background-color: aqua;
+    }
+    .inner2{
+        border: 2px solid aqua;
+        width: 100%;
+        height: 100%;
+    
+    }
+    .inner2 h3{
+        background-color: aqua;
+    }
+    .container4 p{
+        border: 2px solid;
+    }
+    .section4{
+        width:100vw;
+        height:100vh;
+        position: relative;
+    }
+    .bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:20vh 30vh 45vh;
+        margin-top: 20px;
+        position: absolute;
+        
+    }
+    .red{
+        background-color: brown;
+        font-size: xx-large;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    .red p{
+        margin-left: 15%;
+    }
+    .grey {
+        background-color: gray;
+        display: flex;
+        gap:20px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        color: white;
+    }
+    .grey div{
+        padding: 0px 10%;
+    }
+    .form{
+        position: absolute;
+        background-color: white;
+        width:60%;
+        height:50%;
+        top:120px;
+        z-index: 2;
+        left:15%;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap:20Px
+    }
+    .last{
+        background-color: white;
+        text-align: center;
+        font-size:large;
+        margin: 0;
+
+    }
+    .input input{
+        width:100%;
+        height:30px
+    }
+    .input{
+        width:100%;
+    }
+    .innner-box{
+        display: block;
+        width:100%;
+    }
+    .inner-box input[ type ="text"]{
+        width:100%;
+        
+
+    }
+    @media only screen and (max-width: 768px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+  .section2 {
+    grid-template-columns: 1fr;
+  }
+  .section3 {
+    grid-template-columns: 1fr;
+  }
+  .form {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section1 {
+    grid-template-rows: repeat(6, 200px);
+  }
+  .section2 {
+    grid-template-rows: repeat(2, 200px);
+  }
+  .section3 {
+    grid-template-rows: repeat(3, 200px);
+  }
+  .form {
+    width: 90%;
+    left: 5%;
+  }
+  .input input {
+    width: 100%;
+  }
+  .inner-box input[type="text"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section1 {
+    grid-template-rows: repeat(6, 150px);
+  }
+  .section2 {
+    grid-template-rows: repeat(2, 150px);
+  }
+  .section3 {
+    grid-template-rows: repeat(3, 150px);
+  }
+  .form {
+    width: 95%;
+    left: 2.5%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <body>
+        <div class="section1">
+            <div class="box1" style="background-color: brown; padding: 10px;">
+                <h1 style="color: white;">MAGAZEE</h1>
+            </div>
+            <div class="box2" style="background-color: white; padding: 10px;">
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, maiores eius laborum voluptas facilis repudiandae eos, sint numquam soluta incidunt eligendi officia sed consequuntur itaque sunt fuga impedit nam! Beatae.</P>
+            </div>
+            <div class="box3" style="background-color: white; padding: 10px;">
+                <h3 style="color: brown;">Fusce ac enim at justo</h3>
+                 <p>cupiditate impedit dolorem fugiat praesentium maiores. Recusandae, rerum dolorum dolor architecto veniam nostrum deserunt ex eius impedit?</p>
+                 <input type="text" placeholder="READ MORE" style="background-color: brown; width: 90PX;">
+            </div>
+            <div class="box4" style="background-color:brown; padding: 10px;">
+                <div class="img">
+                    <img src="./images/image-04 (1).jpg">
+                </div>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt explicabo molestiae modi amet corpo
+                </div>
+
+            <div class="box5" style="background-color:red ; padding: 10px;"></div>
+              <div class="box6" style="background-color: white;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex tempora eveniet minus dolorum id, expedita doloribus quos libero ducimus molestias! Quos, </p>
+    <input type="text" placeholder="READ MORE" style="background-color: brown; width: 90PX;">
+           </div>
+         </div>
+        <div class="section2">
+            <div class="matter" style="padding: 10px;">
+                <h4 style="color: brown;">Nullam auctor ornare finibus</h3>
+                <p>maxime unde amet libero. Possimus, id voluptatibus facilis nobis recusandae quas fugiat nihil voluptas reprehenderit amet ratione beatae eaque veniam quibusdam.</p>
+                <input type="text" placeholder="READ MORE" style="background-color: brown; width: 90PX; text-align: center;">
+            </div>
+            <div class="img2">
+            </div>
+        </div>
+
+        <!-- section 3 -->
+  <div class="section3">
+        <div class="imgfoodball">
+            <img src="./images/image-03 (1).jpg">
+        </div>
+        <div class="inner1" >
+            <div class="lopala"></div>
+            <h3>Standard plan</h3>
+            <h3>($25 per month)</h3>
+            <p style="padding: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, dolorum atque debitis quo odio illum sapiente vitae saepe in e Optio, praesentium nulla.</p>
+            <input type="text" placeholder="BUY NOW" style="background-color: aqua; width: 90PX; text-align: center; margin: 20px;">
+        </div>
+        <div class="inner2" >
+            <div class="lopala"></div>
+            <h3>Advanced plan</h3>
+            <h3>($40 per month)</h3>
+            <p style="padding: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, dolorum atque debitis quo odio illum sapiente vitae saepe in e Optio, praesentium nulla.</p>
+            <input type="text" placeholder="BUY NOW" style="background-color: aqua; width: 90PX; text-align: center; margin: 20px;">
+        </div>
+        </div>
+    </div>
+    
+    
+    <div class="section4">
+        <div class="bottom">
+            <div class="red"><p>Application</p></div>
+            <div class="white"></div>
+            <div class="grey">
+                <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt cumque iusto? Illo, delenit.</p></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus, nam blanditiis, culpa.</p></div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="input">
+                <input type="text" placeholder="FULL NAME"><br>
+                <br><input type="text"placeholder="YOURS EAMIL"></br>
+                <br><input type="text"placeholder="POSITION"></br>
+                <br><input type="text"placeholder="SALARY"></br>
+            </div>
+            <div class="inner-box">
+                <input type="radio">MALE
+                <input type="radio">FEMALE
+                <br><input type="text" placeholder="Additional Messages" style="height: 90px;">
+            </div>
+            <!-- <div><input type="submit" style="margin-left: 150px;background-color: brown;color:white;"></div> -->
+        </div> 
+    </div>
+    <div class="last">
+        <span>copyright@4444323435</span>
+    </div>
+    
+        
+    
+    
+ </body>
+</html> 
